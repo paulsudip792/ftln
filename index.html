@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Swipper-css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="loho-nav" href="index.html"
+              ><img src="./assets/nav-logo.png" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-start" id="navbarSupportedContent">
+            <button
+              class="offcanvas-hdarder"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 back">
+              <li class="nav-item">
+                <a class="nav-link active home-btn" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Workouts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Traners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Workouts</a>
+              </li>
+              <li class="nav-item">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2 nav-search"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </form>
+              </li>
+              <li class="nav-cart nav-item nav-cart">
+                <a href="#"> <img src="./assets/Cart.png" alt="" /></a>
+              </li>
+            </ul>
+            <div class="navbtn">
+              <a href="" class="btn-nav"
+                >Login/Create Account<img src="./assets/arrow-Icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner-secton -->
+    <div class="banner-sec">
+      <div class="container">
+        <div class="row banner-row">
+          <div class="col-12 col-xl-6">
+            <div class="banner-cntn">
+              <p class="banner-para fw-medium">
+                Lorem ipsum dolor sit amet consectetur. Nullam vitae leo sed
+                scelerisque.
+              </p>
+
+              <div class="banner-img">
+                <div class="sub-img">
+                  <img src="./assets/Frame 4 (1).png" alt="" />
+                </div>
+                <div class="sub-img">
+                  <img src="./assets/Frame 6.png" alt="" />
+                </div>
+                <div class="sub-img">
+                  <img src="./assets/Frame 7.png" alt="" />
+                </div>
+                <div class="sub-img">
+                  <img src="./assets/Frame 5.png" alt="" />
+                </div>
+              </div>
+              <div class="banner-sub-cntn fw-medium">
+                <p><span>12k +</span> Membership Enjoy Our Programs</p>
+              </div>
+              <div class="banner-sub-cntn-1">
+                <p>Scroll</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="banner-heading">
+              <h1>FocusFuel</h1>
+            </div>
+            <div class="banner-sub-heading">
+              <h1>Fitness</h1>
+              <img src="./assets/hero-right-img.png" alt="" />
+            </div>
+            <div class="banner-sub-heeding-down">
+              <p>Visit Now</p>
+              <img src="./assets/hero-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card-sec -->
+    <section class="card-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="card">
+              <div class="row-1">
+                <div class="card-cntn">
+                  <div class="card-cntn-img">
+                    <img src="./assets/hero-right-img.png" alt="" />
+                  </div>
+                  <p>personal training</p>
+                  <div class="card-sun-cntn">
+                    <h2>01</h2>
+                  </div>
+                </div>
+                <div class="card-img">
+                  <img src="./assets/card-img(1).png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="card-1">
+              <div class="row-1">
+                <div class="card-cntn">
+                  <div class="card-cntn-img">
+                    <img src="./assets/hero-right-img.png" alt="" />
+                  </div>
+                  <p>group workout</p>
+                  <div class="card-sun-cntn">
+                    <h2>02</h2>
+                  </div>
+                </div>
+                <div class="card-img">
+                  <img src="./assets/card-img(2).png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="card-2">
+              <div class="row-1">
+                <div class="card-cntn">
+                  <div class="card-cntn-img">
+                    <img src="./assets/hero-right-img.png" alt="" />
+                  </div>
+                  <p>muscle building</p>
+                  <div class="card-sun-cntn">
+                    <h2>03</h2>
+                  </div>
+                </div>
+                <div class="card-img-1">
+                  <img src="./assets/card-img(3).png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-sec">
+      <div class="container">
+        <div class="about-top-cntn">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="about-top-left-cntn">
+                <div class="about-top-left-img">
+                  <img src="./assets/yellow-logo.png" alt="" />
+                </div>
+                <p>About Our Gym</p>
+                <div class="about-img">
+                  <img src="./assets/hero-right-img.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="about-top-right-cntn">
+                <h3>
+                  Empowering Every Body to Move Stronger, Live Better, and Go
+                  Further
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-bottom-left-cntn">
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="about-bottom-left-img">
+                <img src="./assets/about-btm-img.png" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="about-bottom-right-cntn">
+                <h5>
+                  We believe fitness is more than just physical. It’s about
+                  building confidence, discipline, and a lifestyle you can be
+                  proud of.
+                </h5>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="about-btn-1">
+                    <div class="about-btn-1">
+                      <p class="about-para">
+                        Founded with the version of creating a spacet for all
+                        fitness levels .Our gym offers expert guidence modern
+                        equipment and an uplifting atmosphere to help you
+                        achieve your goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <p class="about-para">
+                    Whether you’re a beginner or a seasoned athlete. We’re here
+                    to support your journey with personalized training,
+                    diverseprograms and a community that motivates you every
+                    step of the way
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 about-btm-sub-img">
+                  <img src="./assets/we-are-icon.png" alt="" />
+                </div>
+                <div class="col-6 about-btm-cntn-2">
+                  <p>CUSTOMER SUPPORT</p>
+                  <span>(888)4000-2424</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about-gym-sec -->
+    <section class="about-gym-sec">
+      <div class="about-gym-top-hdr">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="about-gym-left-hdr">
+                <p>About Our Gym</p>
+                <div class="about-gym-img">
+                  <img src="./assets/hero-right-img.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="about-gym-rgt-hdr">
+                <p>Turn your workout into a lifestyle that moves you forward</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="about-gym-btm-hdr">
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="about-gym-sub-img">
+                <img src="./assets/about-gym-sub-img.png" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="about-gym-card">
+                    <div class="about-gym-card-img">
+                      <img src="./assets/about-gym-card-icon.png" alt="" />
+                    </div>
+                    <div class="about-gym-card-cntn">
+                      <h5>Certified & Experience Coachees</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="about-gym-card">
+                    <div class="about-gym-card-img">
+                      <img src="./assets/about-gym-card-icon.png" alt="" />
+                    </div>
+                    <div class="about-gym-card-cntn">
+                      <h5>Certified & Experience Coachees</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="about-gym-card">
+                    <div class="about-gym-card-img">
+                      <img src="./assets/about-gym-card-icon.png" alt="" />
+                    </div>
+                    <div class="about-gym-card-cntn">
+                      <h5>Certified & Experience Coachees</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="about-gym-card">
+                    <div class="about-gym-card-img">
+                      <img src="./assets/about-gym-card-icon.png" alt="" />
+                    </div>
+                    <div class="about-gym-card-cntn">
+                      <h5>Certified & Experience Coachees</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="about-gym-card">
+                    <div class="about-gym-card-img">
+                      <img src="./assets/about-gym-card-icon.png" alt="" />
+                    </div>
+                    <div class="about-gym-card-cntn">
+                      <h5>Certified & Experience Coachees</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="about-gym-card">
+                    <div class="about-gym-card-img">
+                      <img src="./assets/about-gym-card-icon.png" alt="" />
+                    </div>
+                    <div class="about-gym-card-cntn">
+                      <h5>Certified & Experience Coachees</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- coaches-section -->
+    <section class="coaches-sec">
+      <div class="coaches-hdr">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="coaches-left-hdr">
+                <p>meet your coaches</p>
+                <div class="coaches-img">
+                  <img src="./assets/hero-right-img.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="coaches-rgt-hdr">
+                <h5>
+                  Flexible Options for Beginners, Regulars, and Hardcore
+                  Athletes
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="coaches-card">
+                <div class="coaches-card-img">
+                  <img src="./assets/coaches-img(1).png" alt="" />
+                </div>
+                <div class="coaches-cntn">
+                  <div class="coaches-cntn-img">
+                    <img src="./assets/hero-right-img.png" alt="" />
+                  </div>
+                  <h2>FITNESS COACH</h2>
+                  <p>Ethan Cross</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="coaches-card">
+                <div class="coaches-card-img">
+                  <img src="./assets/coaches-img(2).png" alt="" />
+                </div>
+                <div class="coaches-cntn">
+                  <div class="coaches-cntn-img">
+                    <img src="./assets/hero-right-img.png" alt="" />
+                  </div>
+                  <h2>FITNESS COACH</h2>
+                  <p>Ethan Cross</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="coaches-card">
+                <div class="coaches-card-img">
+                  <img src="./assets/coaches-img(3).png" alt="" />
+                </div>
+                <div class="coaches-cntn">
+                  <div class="coaches-cntn-img">
+                    <img src="./assets/hero-right-img.png" alt="" />
+                  </div>
+                  <h2>FITNESS COACH</h2>
+                  <p>Ethan Cross</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="coaches-card">
+                <div class="coaches-card-img">
+                  <img src="./assets/coaches-img(1).png" alt="" />
+                </div>
+                <div class="coaches-cntn">
+                  <div class="coaches-cntn-img">
+                    <img src="./assets/coaches-img(2).png" alt="" />
+                  </div>
+                  <h2>FITNESS COACH</h2>
+                  <p>Ethan Cross</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="coaches-card">
+                <div class="coaches-card-img">
+                  <img src="./assets/coaches-img(3).png" alt="" />
+                </div>
+                <div class="coaches-cntn">
+                  <div class="coaches-cntn-img">
+                    <img src="./assets/hero-right-img.png" alt="" />
+                  </div>
+                  <h2>FITNESS COACH</h2>
+                  <p>Ethan Cross</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="coaches-card">
+                <div class="coaches-card-img">
+                  <img src="./assets/coaches-img(3).png" alt="" />
+                </div>
+                <div class="coaches-cntn">
+                  <div class="coaches-cntn-img">
+                    <img src="./assets/hero-right-img.png" alt="" />
+                  </div>
+                  <h2>FITNESS COACH</h2>
+                  <p>Ethan Cross</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!-- choose-sec -->
+    <section class="choose-sec">
+      <div class="container">
+        <div class="choose-hdr-top">
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="choose-hdr-top-left">
+                <p>Choose Your Plan</p>
+                <div class="choose-hdr-top-img">
+                  <img src="./assets/hero-right-img.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-6 col-choose">
+              <div class="choose-hdr-top-rgt">
+                <h5>
+                  Flexible plans tailored to your goals—start your fitness
+                  journey today.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-xl-4">
+            <div class="choose-hdr-btm">
+              <div class="choose-hdr-btm-card">
+                <div class="choose-btm-img">
+                  <img src="./assets/hero-right-img.png" alt="" />
+                </div>
+                <h5>BASIC</h5>
+                <p>For beginners taking that first steps into fitness</p>
+                <div class="choose-hdr-sub-btm">
+                  <div class="choose-hdr-btm-cntn">
+                    <h2>
+                      $15
+                      <span>/ month</span>
+                    </h2>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>All Basic Features</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Unlimited Group Classes</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Progress & Body Tracking</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Locker Use</p>
+                    </div>
+                  </div>
+                  <div class="choose-hdr-btm-img-1">
+                    <img src="./assets/choose-btm-img.png" alt="" />
+                  </div>
+                </div>
+                <div class="member-btm">
+                  <p>get membership</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <div class="choose-hdr-btm">
+              <div class="choose-hdr-btm-card">
+                <div class="choose-btm-img">
+                  <img src="./assets/hero-right-img.png" alt="" />
+                </div>
+                <h5>BASIC</h5>
+                <p>For beginners taking that first steps into fitness</p>
+                <div class="choose-hdr-sub-btm">
+                  <div class="choose-hdr-btm-cntn">
+                    <h2>
+                      $15
+                      <span>/ month</span>
+                    </h2>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>All Basic Features</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Unlimited Group Classes</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Progress & Body Tracking</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Locker Use</p>
+                    </div>
+                  </div>
+                  <div class="choose-hdr-btm-img-1">
+                    <img src="./assets/choose-btm-img.png" alt="" />
+                  </div>
+                </div>
+                <div class="member-btm btm">
+                  <p>get membership</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <div class="choose-hdr-btm">
+              <div class="choose-hdr-btm-card">
+                <div class="choose-btm-img">
+                  <img src="./assets/hero-right-img.png" alt="" />
+                </div>
+                <h5>BASIC</h5>
+                <p>For beginners taking that first steps into fitness</p>
+                <div class="choose-hdr-sub-btm">
+                  <div class="choose-hdr-btm-cntn">
+                    <h2>
+                      $15
+                      <span>/ month</span>
+                    </h2>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>All Basic Features</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Unlimited Group Classes</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Progress & Body Tracking</p>
+                    </div>
+                    <div class="choose-hdr-sub-btm-cntn-1">
+                      <div class="choose-hdr-sub-btm-img">
+                        <img src="./assets/choose-btm-icon.png" alt="" />
+                      </div>
+                      <p>Locker Use</p>
+                    </div>
+                  </div>
+                  <div class="choose-hdr-btm-img-1">
+                    <img src="./assets/choose-btm-img.png" alt="" />
+                  </div>
+                </div>
+                <div class="member-btm">
+                  <p>get membership</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- location-sec -->
+    <section class="location-sec">
+      <div class="container">
+        <div class="location-top-hdr">
+          <div class="location-top-hdr-cntn">
+            <p>OUR CATION</p>
+            <div class="location-top-img">
+              <img src="./assets/hero-right-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="location-mid-hdr">
+          <div class="location-mid-hdr-cntn">
+            <h4>
+              Our global presence: <span>Fitness</span> centers
+              <span>around the world</span>
+            </h4>
+          </div>
+          <div class="location-mid-sub-hdr">
+            <div class="location-mid-hdr-left">
+              <h2>25 <span>+</span></h2>
+              <p>countries</p>
+            </div>
+            <div class="location-mid-hdr-rht">
+              <p>
+                Our presence stretches across continents, connecting a worldwide
+                community of fitness enthusiasts. From bustling metropolitan
+                hubs to growing local neighborhoods, our fitness centers deliver
+                the same trusted quality and results-driven training. Each
+                location is equipped with expert coaches, modern facilities, and
+                a motivating environment tailored to your goals. Whether you are
+                traveling, relocating, or joining us for the first time, you’ll
+                always find a home for your fitness journey with us. Together,
+                we’re building a stronger, healthier world—one city at a time.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="location-btm-hdr">
+          <div class="location-btm-img">
+            <img src="./assets/Map.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- transform-sec -->
+    <section class="transform-sec">
+      <div class="container">
+        <div class="tranform-img">
+          <img src="./assets/transform-img.png" alt="" />
+          <div class="transform-cntn">
+            <p>Real Stories. Real People.</p>
+            <h2>Real Transformation.</h2>
+          </div>
+        </div>
+
+        <div class="transform-cntn-img">
+          <img src="./assets/hero-right-img.png" alt="" />
+        </div>
+        <div class="transform-sub-cntn">
+          <p>
+            Join a community that supports your goals with expert coaching,
+            flexible programs and real results.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- footer-section -->
+    <footer class="footer-sec">
+      <section>
+        <div class="container">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-12 col-xl-5">
+                <div class="footer-top-left-cntn">
+                  <span>©2025 Fitin.</span>
+                  <p>All rights reserved.</p>
+                  <div class="footer-sub-left-cntn">
+                    <a href="">Instagram</a>
+                    <img src="./assets/footer-icon.png" alt="" />
+                  </div>
+                  <div class="footer-sub-left-cntn">
+                    <a href="">Facebook</a>
+                    <img src="./assets/footer-icon.png" alt="" />
+                  </div>
+                  <div class="footer-sub-left-cntn">
+                    <a href="">YouTube</a>
+                    <img src="./assets/footer-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-7">
+                <div class="footer-top-rht-cntn">
+                  <div class="footer-rht-logo">
+                    <a href="index.html">
+                      <img src="./assets/footer-logo.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="footer-sub-rht-cntn">
+                    <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="">About Us</a></li>
+                      <li><a href="">features</a></li>
+                      <li><a href="">Workouts</a></li>
+                      <li><a href="">trainers</a></li>
+                      <li><a href="">testimonials</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-line"></div>
+          <div class="footer-btm">
+            <div class="row">
+              <div class="col-12 col-xl-6">
+                <div class="footer-btm-left">
+                  <p>Stay Updated</p>
+                  <span
+                    >event info straight to your inbox. Subscribe to get this
+                    tips, offers, and</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 col-xl-6">
+                <div class="footer-btm-rght">
+                  <form class="footer-form" action="">
+                    <input
+                      type="email"
+                      name=""
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- bootsrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

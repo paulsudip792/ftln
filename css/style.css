@@ -917,6 +917,12 @@ a {
     color: var(--secondary-color);
     position: relative;
   }
+  .footer-sub-rht-cntn > ul > li > a {
+    font-size: 6px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    position: relative;
+  }
 }
 @media (max-width: 768px) {
   /* banner-section */

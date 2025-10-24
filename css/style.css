@@ -8,8 +8,10 @@
   --tertiary-color: #f2ff00;
   --text-color: #1e1e1e;
 }
-body {
+body,
+html {
   font-family: Clash Display Variable;
+  overflow-x: hidden;
 }
 /* .navbar{
     align-items: center;

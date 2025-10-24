@@ -1101,7 +1101,7 @@ a {
   .card-1 {
     max-width: 640px;
     height: 380px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--secondary-color);
     padding: 24px;
     background: url(../assets/card-bg\(2\).jpg) no-repeat center/cover;
     background-color: #1e1e1e;

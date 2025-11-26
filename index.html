@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FITIN</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/Tab-logo.ico" />
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Aos CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Fontshare CDN -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <!-- Header Section -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xxl">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html"
+              ><img src="./assets/Logo.png" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler bg-transparent border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars text-white fs-2"></i
+            ></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            data-bs-scroll="false"
+            id="navbarSupportedContent"
+          >
+            <button
+              class="offcanvas-header me-auto mb-2"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark text-black"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Activity <i class="fa-solid fa-angle-down"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Workout.html"
+                      >Workout <i class="fa-solid fa-angle-down"></i
+                    ></a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">progress tracking</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Workout History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Rest & Recovery Logs</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Workout.html">Workouts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Trainers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Testimonials</a>
+              </li>
+              <form class="d-flex search-form" role="search">
+                <div class="search-wrpr d-flex align-items-center">
+                  <label for="search-input"
+                    ><img src="./assets/search.png" alt=""
+                  /></label>
+                  <input
+                    class="form-control me-2 search-input"
+                    type="search"
+                    name="search-input"
+                    id="search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+              <div class="cart-bg">
+                <a href=""><img src="./assets/shopping-bag.png" alt="" /></a>
+              </div>
+            </ul>
+            <a
+              class="btn nav-btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <span>login / create account</span>
+              <img src="./assets/Icon.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <div
+                class="modal-header d-flex flex-column align-items-start border-0"
+              >
+                <span class="yellow-line smaller-yellow-line"></span>
+                <h3 class="title3">create account</h3>
+                <p class="modal-desc">
+                  Lorem ipsum dolor sit amet consectetur. Enim et in tellus at.
+                  Blandit etiam.
+                </p>
+                <form action="" class="modal-form">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input
+                          type="text"
+                          id="fname"
+                          placeholder="firstname*"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="lname" placeholder="lastname*" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Email-logo.png" alt="" />
+                        <input
+                          type="email"
+                          id="emailname"
+                          placeholder="email address*"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="gender" placeholder="gender*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Calander-logo.png" alt="" />
+                        <input type="number" id="age" placeholder="age*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Pass-logo.png" alt="" />
+                        <input type="number" id="phone" placeholder="phone*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Weight-logo.png" alt="" />
+                        <input type="number" id="weight" placeholder="Weight" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="goal" placeholder="Goal" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Pass-logo.png" alt="" />
+                        <input
+                          type="password"
+                          id="password"
+                          placeholder="password*"
+                        />
+                        <img
+                          src="./assets/eye-close-logo.png"
+                          alt=""
+                          class="eye-close"
+                        />
+                      </div>
+                    </div>
+                    <div class="terms">
+                      <img src="./assets/About/Yellow-tick.png" alt="" /><span
+                        >I agree to the </span
+                      ><a href="">Terms & Privacy</a>
+                    </div>
+                    <div class="col-12">
+                      <a
+                        href=""
+                        class="submit-btn-wrpr d-flex justify-content-between align-items-center"
+                      >
+                        <input type="button" value="Submit" id="submit-btn" />
+                        <i
+                          class="fa-solid fa-circle-arrow-right text-black fs-2"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="modal-right">
+                <div class="modal-logo">
+                  <img src="./assets/Modal-logo.png" alt="" />
+                </div>
+                <div class="modal-right-cntn">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Volutpat sittortor.
+                    Tempus congue adipiscing aliquam cursus turpis ultricies.
+                  </p>
+                  <div
+                    class="modal-btm d-flex justify-content-between align-items-center"
+                  >
+                    <p>
+                      firstname lastname
+                      <span class="line1">designation</span>
+                    </p>
+                    <div class="radio-btn-wrpr d-flex align-items-center">
+                      <input type="radio" name="" id="" /><span class="line2"
+                        >open ventures</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!-- Banner Section -->
+      <section class="banner-sec d-flex align-items-end">
+        <div class="container">
+          <div class="row banner-row">
+            <div class="col-12 col-lg-4">
+              <div class="banner-left-cntn">
+                <p class="grey-text">
+                  Lorem ipsum dolor sit amet consectetur. Nullam vitae leo sed
+                  scelerisque.
+                </p>
+                <ul class="img-circles d-flex list-unstyled">
+                  <li class="img-circle">
+                    <img src="./assets/Banner-circle1.png" alt="" />
+                  </li>
+                  <li class="img-circle">
+                    <img src="./assets/Banner-circle2.png" alt="" />
+                  </li>
+                  <li class="img-circle">
+                    <img src="./assets/Banner-circle3.png" alt="" />
+                  </li>
+                  <li class="img-circle">
+                    <img src="./assets/Banner-circle4.png" alt="" />
+                  </li>
+                </ul>
+                <p class="member-text">
+                  <span>12k +</span> Membership Enjoy Our Programs
+                </p>
+                <p class="scroll">Scroll</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8">
+              <div class="banner-right-cntn">
+                <h1 class="title1">
+                  FocusFuel <span class="yellow-text">Fitness</span>
+                  <span class="yellow-line"></span>
+                </h1>
+
+                <a
+                  href=""
+                  class="btn banner-btn d-flex justify-content-between align-items-center"
+                  >Visit Now
+                  <img src="./assets/arrow.png" alt="" class="white-arrow"
+                /></a>
+                <!-- <div class="overlay">
+                  <img src="./assets/Banner-overlay.png" alt="" />
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Category Section -->
+      <section class="category-sec">
+        <div class="container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card card1">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">personal training</h3>
+                  <p class="num">01</p>
+                  <div class="cata-card-img1">
+                    <img src="./assets/Catg-img1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card2">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">group workout</h3>
+                  <p class="num">02</p>
+                  <div class="cata-card-img2">
+                    <img src="./assets/Catg-img2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card3">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">muscle building</h3>
+                  <p class="num">03</p>
+                  <div class="cata-card-img3">
+                    <img src="./assets/Catg-img3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card1">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">personal training</h3>
+                  <p class="num">01</p>
+                  <div class="cata-card-img1">
+                    <img src="./assets/Catg-img1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card2">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">group workout</h3>
+                  <p class="num">02</p>
+                  <div class="cata-card-img2">
+                    <img src="./assets/Catg-img2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card3">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">muscle building</h3>
+                  <p class="num">03</p>
+                  <div class="cata-card-img3">
+                    <img src="./assets/Catg-img3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card1">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">personal training</h3>
+                  <p class="num">01</p>
+                  <div class="cata-card-img1">
+                    <img src="./assets/Catg-img1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card2">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">group workout</h3>
+                  <p class="num">02</p>
+                  <div class="cata-card-img2">
+                    <img src="./assets/Catg-img2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card card3">
+                  <span class="yellow-line smaller-yellow-line"></span>
+                  <h3 class="title3">muscle building</h3>
+                  <p class="num">03</p>
+                  <div class="cata-card-img3">
+                    <img src="./assets/Catg-img3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="about-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="about-left-cntn" data-aos="fade-right">
+                <div class="about-hdr d-flex">
+                  <h3 class="title3 about-title3">About Our Gym</h3>
+                  <span
+                    class="yellow-line smaller-yellow-line about-yellow-line"
+                  ></span>
+                </div> 
+                <figure class="about-img">
+                  <img src="./assets/About-img.png" alt="" />
+                </figure>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="about-right-cntn" data-aos="fade-left">
+                <div class="about-right-hdr">
+                  <h2 class="title2">
+                    Empowering Every Body to Move Stronger, Live Better, and Go
+                    Further
+                  </h2>
+                  <div class="about-right-desc">
+                    <div class="about-right-desc-hdr">
+                      We believe fitness is more than just physical. It’s about
+                      building confidence, discipline, and a lifestyle you can
+                      be proud of.
+                    </div>
+                    <div class="row about-desc-row">
+                      <div class="col-12 col-md-6">
+                        <div class="left-desc desc">
+                          Founded with the version of creating a spacet for all
+                          fitness levels .Our gym offers expert guidence modern
+                          equipment and an uplifting atmosphere to help you
+                          achieve your goals.
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="right-desc desc">
+                          Whether you’re a beginner or a seasoned athlete. We’re
+                          here to support your journey with personalized
+                          training, diverseprograms and a community that
+                          motivates you every step of the way
+                        </div>
+                      </div>
+                    </div>
+                    <div class="phone-sec d-flex">
+                      <div class="phone-img">
+                        <img src="./assets/Phone.png" alt="" />
+                      </div>
+                      <div class="phone-contact">
+                        <a href="">
+                          CUSTOMER SUPPORT <span>(888)4000-2424</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Service Section -->
+      <section class="service-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-4">
+              <div class="service-hdr d-flex" data-aos="fade-right">
+                <h3 class="title3 service-title3">Services</h3>
+                <span
+                  class="yellow-line smaller-yellow-line about-yellow-line"
+                ></span>
+              </div>
+            </div>
+            <div class="col-12 col-xl-8">
+              <div class="service-cntn" data-aos="fade-left">
+                <ul class="training-list list-unstyled">
+                  <li class="">
+                    <a href="" class="d-flex align-items-center"
+                      >PERSONAL TRAINING
+                      <div class="traning-img">
+                        <img src="./assets/Traning-img1.png" alt="" />
+                      </div>
+                      <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="" class="d-flex align-items-center"
+                      >GROUP TRAINING <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="" class="d-flex align-items-center"
+                      >CORPORATE TRAINING <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Second About Section-->
+      <section class="sec-about-sec">
+        <div class="container">
+          <div class="row">
+            <div class="c0l-12 col-xl-6">
+              <div class="sec-about-hdr d-flex" data-aos="fade-right">
+                <h3 class="title3 service-title3">About Our Gym</h3>
+                <span
+                  class="yellow-line smaller-yellow-line about-yellow-line"
+                ></span>
+              </div>
+              <div class="sec-about-img" data-aos="fade-right">
+                <img src="./assets/Sec-about-img.png" alt="" />
+              </div>
+            </div>
+            <div class="c0l-12 col-xl-6">
+              <h2 class="title2" data-aos="fade-up">
+                Turn your workout into a lifestyle that moves you forward
+              </h2>
+              <div class="about-card-container">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="trans-card" data-aos="flip-left">
+                      <i class="fa-solid fa-check"></i>
+                      <h4 class="title4">Certified & Experience Coachees</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="trans-card" data-aos="flip-left">
+                      <i class="fa-solid fa-check"></i>
+                      <h4 class="title4">Certified & Experience Coachees</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="trans-card" data-aos="flip-left">
+                      <i class="fa-solid fa-check"></i>
+                      <h4 class="title4">Certified & Experience Coachees</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="trans-card" data-aos="flip-left">
+                      <i class="fa-solid fa-check"></i>
+                      <h4 class="title4">Certified & Experience Coachees</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="trans-card" data-aos="flip-left">
+                      <i class="fa-solid fa-check"></i>
+                      <h4 class="title4">Certified & Experience Coachees</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="trans-card" data-aos="flip-left">
+                      <i class="fa-solid fa-check"></i>
+                      <h4 class="title4">Certified & Experience Coachees</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec justo
+                        volutpat dictumst suspendisse sed sed at libero. Sed
+                        congue diam nisl lobortis diam ut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Coaches Section -->
+      <section class="coaches-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="coaches-left-hdr d-flex" data-aos="fade-right">
+                <h3 class="title3 about-title3">meet your coaches</h3>
+                <span
+                  class="yellow-line smaller-yellow-line about-yellow-line"
+                ></span>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="coaches-right-hdr" data-aos="fade-left">
+                <div class="about-right-hdr">
+                  <h2 class="title2">
+                    Flexible Options for Beginners, Regulars, and Hardcore
+                    Athletes
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper second-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach1">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img1.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Ethan Cross</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach2">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img2.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Trent Morgan</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach3">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img3.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Damian Brooks</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach1">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img1.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Ethan Cross</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach2">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img2.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Trent Morgan</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach3">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img3.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Damian Brooks</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach1">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img1.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Ethan Cross</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach2">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img2.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Trent Morgan</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide coach-slide">
+                <div class="coach-card coach3">
+                  <div class="coach-img">
+                    <img src="./assets/Coach-img3.png" alt="" />
+                  </div>
+                  <div class="coach-desc">
+                    <span class="yellow-line smaller-yellow-line"></span>
+                    <div class="coach-title">fitness coach</div>
+                    <div class="coach-name">Damian Brooks</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination coach-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Plan Section -->
+      <section class="plan-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="plan-left-hdr d-flex" data-aos="fade-right">
+                <h3 class="title3 plan-title3">Choose Your Plan</h3>
+                <span
+                  class="yellow-line smaller-yellow-line about-yellow-line"
+                ></span>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="plan-right-hdr" data-aos="fade-left">
+                <div class="plan-right-hdr">
+                  <h2 class="title2">
+                    Flexible plans tailored to your goals—start your fitness
+                    journey today.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row plan-row">
+            <div class="col-12 col-lg-6 col-xl-4 plan-col">
+              <div
+                class="plan-parent-box"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
+                <div class="plan-card">
+                  <span class="yellow-line plan-yellow-line"></span>
+                  <div class="coach-title plan-title">Basic</div>
+                  <p class="plan-para">
+                    For beginners taking that first steps into fitness
+                  </p>
+                  <ul class="price-ben list-unstyled">
+                    <div class="price-hdr">$15 <sup>/ month</sup></div>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />All Basic
+                      Features
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Unlimited
+                      Group Classes
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Progress &
+                      Body Tracking
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Locker Use
+                    </li>
+                  </ul>
+                  <div class="plan-btn-wrpr text-center">
+                    <a href="" class="plan-btn">get membership</a>
+                  </div>
+                  <div class="yellow-skew-lines d-flex flex-column">
+                    <span></span><span></span><span></span><span></span
+                    ><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 plan-col">
+              <div
+                class="plan-parent-box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <div class="plan-card">
+                  <span class="yellow-line plan-yellow-line"></span>
+                  <div class="coach-title plan-title">pro</div>
+                  <p class="plan-para">
+                    Level up with advanced workouts and personalized guidance.
+                  </p>
+                  <ul class="price-ben list-unstyled">
+                    <div class="price-hdr">$30 <sup>/ month</sup></div>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />All Basic
+                      Features
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Unlimited
+                      Group Classes
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Progress &
+                      Body Tracking
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Locker Use
+                    </li>
+                  </ul>
+                  <div class="plan-btn-wrpr text-center">
+                    <a href="" class="plan-btn">get membership</a>
+                  </div>
+                  <div class="yellow-skew-lines d-flex flex-column">
+                    <span></span><span></span><span></span><span></span
+                    ><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 plan-col">
+              <div
+                class="plan-parent-box"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
+                <div class="plan-card">
+                  <span class="yellow-line plan-yellow-line"></span>
+                  <div class="coach-title plan-title">elite</div>
+                  <p class="plan-para">
+                    Go all-in with premium coaching for maximum results.
+                  </p>
+                  <ul class="price-ben list-unstyled">
+                    <div class="price-hdr">$65 <sup>/ month</sup></div>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />All Basic
+                      Features
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Unlimited
+                      Group Classes
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Progress &
+                      Body Tracking
+                    </li>
+                    <li>
+                      <img src="./assets/White-tick.png" alt="" />Locker Use
+                    </li>
+                  </ul>
+                  <div class="plan-btn-wrpr text-center">
+                    <a href="" class="plan-btn">get membership</a>
+                  </div>
+                  <div class="yellow-skew-lines d-flex flex-column">
+                    <span></span><span></span><span></span><span></span
+                    ><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Location Section -->
+      <section class="location-sec">
+        <div class="loc-hdr">
+          <div class="container">
+            <div class="location-left-hdr d-flex" data-aos="fade-right">
+              <h3 class="title3 about-title3">our locations</h3>
+              <span
+                class="yellow-line smaller-yellow-line about-yellow-line"
+              ></span>
+            </div>
+            <div class="location-right-hdr" data-aos="fade-left">
+              <h2 class="title2 location-title2">
+                Our global presence: <span class="yellow-span">Fitness</span>
+                <span class="white-text">centers</span>
+                <span class="yellow-span">around the world</span>
+              </h2>
+            </div>
+            <div class="row location-row">
+              <div class="col-12 col-xl-2">
+                <div class="number">
+                  <p>
+                    <span class="counter-number" data-target="25">0</span
+                    ><span class="yellow-plus">+</span>
+                    <span class="small-txt">countries</span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-xl-10">
+                <div class="loc-para" data-aos="zoom-in-up">
+                  Our presence stretches across continents, connecting a
+                  worldwide community of fitness enthusiasts. From bustling
+                  metropolitan hubs to growing local neighborhoods, our fitness
+                  centers deliver the same trusted quality and results-driven
+                  training. Each location is equipped with expert coaches,
+                  modern facilities, and a motivating environment tailored to
+                  your goals. Whether you are traveling, relocating, or joining
+                  us for the first time, you’ll always find a home for your
+                  fitness journey with us. Together, we’re building a stronger,
+                  healthier world—one city at a time.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="loc-img-sec">
+          <div class="container">
+            <div class="loc-img">
+              <img src="./assets/Location-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Transform Section -->
+      <section class="transform-sec">
+        <div class="container">
+          <div class="transform-img" data-tilt data-tilt-reverse="true">
+            <img src="./assets/Transform-img.png" alt="" />
+          </div>
+          <div class="trans-hdr" data-aos="fade-left">
+            Real Transformation.
+            <span>Real Stories. Real People. </span>
+          </div>
+          <div class="trans-yellow text-center">
+            <span
+              class="yellow-line smaller-yellow-line about-yellow-line"
+            ></span>
+          </div>
+          <div class="trans-desc" data-aos="fade-right">
+            Join a community that supports your goals with expert coaching,
+            flexible programs and real results.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="ftr-sec">
+      <div class="container">
+        <div class="ftr-top">
+          <div class="row ftr-row">
+            <div class="col-12 col-xl-6">
+              <div class="ftr-left" data-aos="fade-right">
+                <div class="ftr-hdr1">©2025 Fitin.</div>
+                <div class="ftr-hdr2">All rights reserved.</div>
+                <ul class="scl-list list-unstyled">
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Instagram
+                      <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
+                  </li>
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Facebook
+                      <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
+                  </li>
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Youtube <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="ftr-right" data-aos="fade-left">
+                <div class="ftr-logo">
+                  <a href="index.html"
+                    ><img src="./assets/Ftr-logo.png" alt=""
+                  /></a>
+                </div>
+                <ul class="ftr-list list-unstyled d-flex align-items-center">
+                  <li><a href="" class="ftr-links">Home</a></li>
+                  <li><a href="" class="ftr-links">About Us</a></li>
+                  <li><a href="" class="ftr-links">Features</a></li>
+                  <li><a href="" class="ftr-links">Workouts</a></li>
+                  <li><a href="" class="ftr-links">Trainers</a></li>
+                  <li><a href="" class="ftr-links">Testimonials</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ftr-btm">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="ftr-btm-left">
+                <div class="ftr-hdr1">Stay Updated</div>
+                <p>
+                  event info straight to your inbox. Subscribe to get this tips,
+                  offers, and
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <form action="" class="email-form">
+                <div class="email-input-wrpr">
+                  <input
+                    type="text"
+                    class="email-input"
+                    placeholder="Email Input"
+                  />
+                  <a class="btn nav-btn ftr-btn" type="submit" id="submit-btn">
+                    <span>Subscribe</span>
+                    <img src="./assets/Icon.png" alt="" />
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Isotope JS CDN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Vanilla Tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>

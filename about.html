@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FITIN</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Aos CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Fontshare CDN -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style/aboutstyle.css" />
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <!-- Header Section -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xxl">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html"
+              ><img src="./assets/Logo.png" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler bg-transparent border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars text-white fs-2"></i
+            ></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <button
+              class="offcanvas-header me-auto mb-2"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark text-black"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Activity <i class="fa-solid fa-angle-down"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Workout <i class="fa-solid fa-angle-down"></i
+                    ></a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">progress tracking</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Workout History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Rest & Recovery Logs</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Workout.html">Workouts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Trainers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Testimonials</a>
+              </li>
+              <form class="d-flex search-form" role="search">
+                <div class="search-wrpr d-flex align-items-center">
+                  <label for="search-input"
+                    ><img src="./assets/search.png" alt=""
+                  /></label>
+                  <input
+                    class="form-control me-2 search-input"
+                    type="search"
+                    name="search-input"
+                    id="search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+              <div class="cart-bg">
+                <a href=""><img src="./assets/shopping-bag.png" alt="" /></a>
+              </div>
+            </ul>
+            <a
+              class="btn nav-btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <span>login / create account</span>
+              <img src="./assets/Icon.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <div
+                class="modal-header d-flex flex-column align-items-start border-0"
+              >
+                <span class="yellow-line smaller-yellow-line"></span>
+                <h3 class="title3">create account</h3>
+                <p class="modal-desc">
+                  Lorem ipsum dolor sit amet consectetur. Enim et in tellus at.
+                  Blandit etiam.
+                </p>
+                <form action="" class="modal-form">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input
+                          type="text"
+                          id="fname"
+                          placeholder="firstname*"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="lname" placeholder="lastname*" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Email-logo.png" alt="" />
+                        <input
+                          type="email"
+                          id="emailname"
+                          placeholder="email address*"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="gender" placeholder="gender*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Calander-logo.png" alt="" />
+                        <input type="number" id="age" placeholder="age*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Pass-logo.png" alt="" />
+                        <input type="number" id="phone" placeholder="phone*" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Weight-logo.png" alt="" />
+                        <input type="number" id="weight" placeholder="Weight" />
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Person-logo.png" alt="" />
+                        <input type="text" id="goal" placeholder="Goal" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-wrpr d-flex">
+                        <img src="./assets/Pass-logo.png" alt="" />
+                        <input
+                          type="password"
+                          id="password"
+                          placeholder="password*"
+                        />
+                        <img
+                          src="./assets/eye-close-logo.png"
+                          alt=""
+                          class="eye-close"
+                        />
+                      </div>
+                    </div>
+                    <div class="terms">
+                      <img src="./assets/About/Yellow-tick.png" alt="" /><span
+                        >I agree to the </span
+                      ><a href="">Terms & Privacy</a>
+                    </div>
+                    <div class="col-12">
+                      <a
+                        href=""
+                        class="submit-btn-wrpr d-flex justify-content-between align-items-center"
+                      >
+                        <input type="button" value="Submit" id="submit-btn" />
+                        <i
+                          class="fa-solid fa-circle-arrow-right text-black fs-2"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="modal-right">
+                <div class="modal-logo">
+                  <img src="./assets/Modal-logo.png" alt="" />
+                </div>
+                <div class="modal-right-cntn">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Volutpat sittortor.
+                    Tempus congue adipiscing aliquam cursus turpis ultricies.
+                  </p>
+                  <div
+                    class="modal-btm d-flex justify-content-between align-items-center"
+                  >
+                    <p>
+                      firstname lastname
+                      <span class="line1">designation</span>
+                    </p>
+                    <div class="radio-btn-wrpr d-flex align-items-center">
+                      <input type="radio" name="" id="" /><span class="line2"
+                        >open ventures</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!-- Banner Section -->
+      <section class="banner-sec">
+        <div class="container">
+          <div class="banner-cntn text-center">
+            <h1 class="title1"><span>ABOUT</span> US</h1>
+            <div class="title-btm text-uppercase">
+              <a href="index.html" class="text-white">home</a>
+              <a href="about.html" class="about">about us</a>
+            </div>
+            <div class="yellow-lines text-center">
+              <span class="yellow-line"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="about-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="about-left-cntn">
+                <div class="about-hdr d-flex">
+                  <h3 class="title3 about-title3" data-aos="fade-right">
+                    Who We Are
+                  </h3>
+                  <span
+                    class="yellow-line smaller-yellow-line about-yellow-line"
+                  ></span>
+                </div>
+                <div class="about-right-desc">
+                  <div class="about-right-desc-hdr" data-aos="fade-left">
+                    Nunc vivamus quisque laoreet a porta risus volutpat sit nibh
+                    sociosqu cubilia. At adipiscing auctor ultricies velit
+                    libero ligula imperdiet sodales tellus aliquam urna.
+                  </div>
+                  <div class="row about-desc-row">
+                    <div class="col-12 col-md-6">
+                      <ul
+                        class="left-list about-list list-unstyled"
+                        data-aos="fade-right"
+                      >
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Himenaeos pellentesque
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Elementum ridiculus
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Rutrum convallis
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Pellentesque maecenas
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Cubilia tincidunt
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <ul
+                        class="right-list about-list list-unstyled"
+                        data-aos="fade-left"
+                      >
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Himenaeos pellentesque
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Elementum ridiculus
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Rutrum convallis
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Pellentesque maecenas
+                        </li>
+                        <li>
+                          <img
+                            src="./assets/About/Yellow-tick.png"
+                            alt=""
+                          />Cubilia tincidunt
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="phone-sec d-flex">
+                    <div class="phone-img">
+                      <img src="./assets/Phone.png" alt="" />
+                    </div>
+                    <div class="phone-contact">
+                      <a href="">
+                        CUSTOMER SUPPORT <span>(888)4000-2424</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="about-right-cntn" data-aos="fade-left">
+                <div class="about-right-hdr">
+                  <h2 class="title2">
+                    Empowering Every Body to Move Stronger, Live Better, and Go
+                    Further
+                  </h2>
+                  <figure class="about-img" data-aos="zoom-in-up">
+                    <img src="./assets/About/About-img.png" alt="" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service Section -->
+      <section class="service-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="service-hdr d-flex" data-aos="fade-right">
+                <h3 class="title3 service-title3">Services</h3>
+                <span
+                  class="yellow-line smaller-yellow-line about-yellow-line"
+                ></span>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!-- Slider main container -->
+              <div class="swiper about-swiper" data-aos="fade-left">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper about-wrpr">
+                  <!-- Slides -->
+                  <div class="swiper-slide about-swiper-slide">
+                    <div class="training-card">
+                      <div class="training-hdr">PERSONAL TRAINING</div>
+                      <p>
+                        Ultrices quam mattis posuere porttitor tellus rhoncus
+                        tristique. Primis aliquam dignissim interdum vel
+                        suscipit sodales.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-swiper-slide">
+                    <div class="training-card">
+                      <div class="training-hdr">PERSONAL TRAINING</div>
+                      <p>
+                        Ultrices quam mattis posuere porttitor tellus rhoncus
+                        tristique. Primis aliquam dignissim interdum vel
+                        suscipit sodales.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide about-swiper-slide">
+                    <div class="training-card">
+                      <div class="training-hdr">PERSONAL TRAINING</div>
+                      <p>
+                        Ultrices quam mattis posuere porttitor tellus rhoncus
+                        tristique. Primis aliquam dignissim interdum vel
+                        suscipit sodales.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination about-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Workout Section -->
+      <section class="workout-sec">
+        <div class="container">
+          <div class="work-hdr">
+            <div class="container">
+              <div class="work-left-hdr d-flex" data-aos="fade-right">
+                <h3 class="title3 about-title3">Workouts</h3>
+                <span
+                  class="yellow-line smaller-yellow-line about-yellow-line"
+                ></span>
+              </div>
+              <div class="work-right-hdr" data-aos="fade-left">
+                <h2 class="title2 work-title2">
+                  Your <span class="yellow-text">Fitness</span> Journey Starts
+                  Here:
+                  <span class="white-text">Select a</span>
+                  <span class="yellow-text">Category</span>
+                </h2>
+              </div>
+              <div class="row work-row">
+                <div class="col-12 col-xl-2">
+                  <div class="number">
+                    <p>
+                      <span class="counter-number" data-target="50">0</span
+                      ><span class="yellow-plus">+</span>
+                      <span class="small-txt">Categories</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-10">
+                  <div class="work-para" data-aos="zoom-in-up">
+                    Our training categories are carefully structured to help you
+                    push limits, track results, and evolve both physically and
+                    mentally. You can enroll in focused programs like Power
+                    Build, CrossFit Challenge, or Yoga Flow, and experience
+                    results that go beyond the gym floor. Every routine, every
+                    rep, and every breath brings you one step closer to your
+                    strongest self. With expert support, personalized guidance,
+                    and a motivating community, you’ll stay consistent and
+                    inspired every day. Choose your category, commit to your
+                    plan, and let’s start building the best version of you.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper filter-btn-swpr">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".strength" class="button-slider">
+                  <p class="btn-cntn">strength</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".wellness" class="button-slider">
+                  <p class="btn-cntn">wellness</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".cardio" class="button-slider">
+                  <p class="btn-cntn">cardio</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".combat" class="button-slider">
+                  <p class="btn-cntn">combat</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".strength" class="button-slider">
+                  <p class="btn-cntn">strength</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".wellness" class="button-slider">
+                  <p class="btn-cntn">wellness</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".cardio" class="button-slider">
+                  <p class="btn-cntn">cardio</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".combat" class="button-slider">
+                  <p class="btn-cntn">combat</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".strength" class="button-slider">
+                  <p class="btn-cntn">strength</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".wellness" class="button-slider">
+                  <p class="btn-cntn">wellness</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".cardio" class="button-slider">
+                  <p class="btn-cntn">cardio</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".combat" class="button-slider">
+                  <p class="btn-cntn">combat</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <div class="swiper-slide btn-slideWidth">
+                  <button data-filter="*" class="button-slider">
+                    <p class="btn-cntn">all</p>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".strength" class="button-slider">
+                  <p class="btn-cntn">strength</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".wellness" class="button-slider">
+                  <p class="btn-cntn">wellness</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".cardio" class="button-slider">
+                  <p class="btn-cntn">cardio</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".combat" class="button-slider">
+                  <p class="btn-cntn">combat</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".cardio" class="button-slider">
+                  <p class="btn-cntn">cardio</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".combat" class="button-slider">
+                  <p class="btn-cntn">combat</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".strength" class="button-slider">
+                  <p class="btn-cntn">strength</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".wellness" class="button-slider">
+                  <p class="btn-cntn">wellness</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".cardio" class="button-slider">
+                  <p class="btn-cntn">cardio</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".combat" class="button-slider">
+                  <p class="btn-cntn">combat</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+              <div class="swiper-slide btn-slideWidth">
+                <button data-filter=".calisthenics" class="button-slider">
+                  <p class="btn-cntn">calisthenics</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="element-card strength">
+                  <div class="card-top">
+                    <p class="card-type">Strength</p>
+                    <span
+                      class="yellow-line smaller-yellow-line about-yellow-line"
+                    ></span>
+                    <p class="author">by Ethan Cross</p>
+                    <div class="cata-card-img">
+                      <img src="./assets/About/Cata-card-img1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="row card-btm-row">
+                      <div class="col-12 col-sm-6">
+                        <div class="numbering">01</div>
+                        <div class="card-desc">
+                          Power Build Program <br />
+                          <span
+                            >Focus on muscle growth and compound lifts.</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="card-btn-wrpr text-center">
+                          <a href="" class="card-btn"
+                            ><span>enroll now</span>
+                            <i class="fa-solid fa-arrow-right text-black"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="element-card wellness">
+                  <div class="card-top">
+                    <p class="card-type">Wellness</p>
+                    <span
+                      class="yellow-line smaller-yellow-line about-yellow-line"
+                    ></span>
+                    <p class="author">by trent morgan</p>
+                    <div class="cata-card-img img2">
+                      <img src="./assets/About/Cata-card-img2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="row card-btm-row">
+                      <div class="col-12 col-sm-6">
+                        <div class="numbering">02</div>
+                        <div class="card-desc">
+                          Yoga Flow <br />
+                          <span>Improve flexibility and mindfulness.</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="card-btn-wrpr text-center">
+                          <a href="" class="card-btn"
+                            ><span>enroll now</span>
+                            <i class="fa-solid fa-arrow-right text-black"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="element-card cardio">
+                  <div class="card-top">
+                    <p class="card-type">Cardio</p>
+                    <span
+                      class="yellow-line smaller-yellow-line about-yellow-line"
+                    ></span>
+                    <p class="author">by marcus cole</p>
+                    <div class="cata-card-img img3">
+                      <img src="./assets/About/Cata-card-img3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="row card-btm-row">
+                      <div class="col-12 col-sm-6">
+                        <div class="numbering">03</div>
+                        <div class="card-desc">
+                          Cardio Blast <br />
+                          <span
+                            >Treadmill, cycling, and jump rope sessions.</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="card-btn-wrpr text-center">
+                          <a href="" class="card-btn"
+                            ><span>enroll now</span>
+                            <i class="fa-solid fa-arrow-right text-black"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="element-card Strength">
+                  <div class="card-top">
+                    <p class="card-type">Strength</p>
+                    <span
+                      class="yellow-line smaller-yellow-line about-yellow-line"
+                    ></span>
+                    <p class="author">by Ethan Cross</p>
+                    <div class="cata-card-img img4">
+                      <img src="./assets/About/Cata-card-img4.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="row card-btm-row">
+                      <div class="col-12 col-sm-6">
+                        <div class="numbering">04</div>
+                        <div class="card-desc">
+                          Weightlifting 101 <br />
+                          <span>Learn Olympic and free weight techniques.</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="card-btn-wrpr text-center">
+                          <a href="" class="card-btn"
+                            ><span>enroll now</span>
+                            <i class="fa-solid fa-arrow-right text-black"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="element-card combat">
+                  <div class="card-top">
+                    <p class="card-type">Combat</p>
+                    <span
+                      class="yellow-line smaller-yellow-line about-yellow-line"
+                    ></span>
+                    <p class="author">by Damian Brooks</p>
+                    <div class="cata-card-img img5">
+                      <img src="./assets/About/Cata-card-img5.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="row card-btm-row">
+                      <div class="col-12 col-sm-6">
+                        <div class="numbering">05</div>
+                        <div class="card-desc">
+                          BoxFit Training <br />
+                          <span>Boxing drills for strength and agility.</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="card-btn-wrpr text-center">
+                          <a href="" class="card-btn"
+                            ><span>enroll now</span>
+                            <i class="fa-solid fa-arrow-right text-black"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="element-card strength">
+                  <div class="card-top">
+                    <p class="card-type">Strength</p>
+                    <span
+                      class="yellow-line smaller-yellow-line about-yellow-line"
+                    ></span>
+                    <p class="author">by Ethan Cross</p>
+                    <div class="cata-card-img">
+                      <img src="./assets/About/Cata-card-img1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="row card-btm-row">
+                      <div class="col-12 col-sm-6">
+                        <div class="numbering">06</div>
+                        <div class="card-desc">
+                          Functional Strength <br />
+                          <span>Core stability and endurance workouts.</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="card-btn-wrpr text-center">
+                          <a href="" class="card-btn"
+                            ><span>enroll now</span>
+                            <i class="fa-solid fa-arrow-right text-black"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="element-card calisthenics">
+                  <div class="card-top">
+                    <p class="card-type">Calisthenics</p>
+                    <span
+                      class="yellow-line smaller-yellow-line about-yellow-line"
+                    ></span>
+                    <p class="author">by samantha blaze</p>
+                    <div class="cata-card-img img7">
+                      <img src="./assets/About/Cata-card-img7.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="row card-btm-row">
+                      <div class="col-12 col-sm-6">
+                        <div class="numbering">07</div>
+                        <div class="card-desc">
+                          Core Stability <br />
+                          <span>Build a stronger, balanced core.</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="card-btn-wrpr text-center">
+                          <a href="" class="card-btn"
+                            ><span>enroll now</span>
+                            <i class="fa-solid fa-arrow-right text-black"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="element-card calisthenics">
+                  <div class="card-top">
+                    <p class="card-type">Calisthenics</p>
+                    <span
+                      class="yellow-line smaller-yellow-line about-yellow-line"
+                    ></span>
+                    <p class="author">by samantha blaze</p>
+                    <div class="cata-card-img img8">
+                      <img src="./assets/About/Cata-card-img8.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="row card-btm-row">
+                      <div class="col-12 col-sm-6">
+                        <div class="numbering">08</div>
+                        <div class="card-desc">
+                          Handstand Training <br />
+                          <span>Master balance and shoulder strength.</span>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <div class="card-btn-wrpr text-center">
+                          <a href="" class="card-btn"
+                            ><span>enroll now</span>
+                            <i class="fa-solid fa-arrow-right text-black"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="load-more-btn">
+            <a href="" class="load-btn">load more</a>
+          </div>
+        </div>
+      </section>
+      <!-- Get in touch section -->
+      <section class="get-in-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-5 get-cntn-col">
+              <div class="get-in-cntn" data-tilt data-tilt-reverse="true">
+                <div class="about-hdr d-flex get-hdr">
+                  <h3
+                    class="title3 about-title3 get-title3"
+                    data-aos="fade-right"
+                  >
+                    get in touch
+                  </h3>
+                  <span
+                    class="yellow-line smaller-yellow-line about-yellow-line"
+                  ></span>
+                </div>
+                <p class="questions">Ready to Transform Your Body?</p>
+                <p class="ansr">
+                  Start your fitness journey today with expert-led programs
+                  built for real results — from strength to wellness.
+                </p>
+                <div class="features">
+                  <span class="ansr opacity-100"
+                    ><img
+                      src="./assets/About/Yellow-tick.png"
+                      alt=""
+                    />Complimentary gym kit</span
+                  >
+                  <span class="ansr feature-second opacity-100"
+                    ><img src="./assets/About/Yellow-tick.png" alt="" />Free
+                    session with certified trainer</span
+                  >
+                </div>
+                <div class="membership-prize text-center">
+                  rs <span>19,999</span>
+                </div>
+                <div class="offer text-center">OFF your membership plan.</div>
+                <div class="in-touch-btn text-center">
+                  <a href="" class="form-btn text-black"> enroll now</a>
+                </div>
+                <p class="ansr">
+                  T&C: Offer valid for new enrollments only. Cannot be combined
+                  with other discounts. Limited-time promotion subject to
+                  availability.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-xl-7">
+              <form action="" class="get-in-form" data-aos="fade-left">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <label for="fname2" class="d-flex flex-column"
+                      ><span class="black-line"></span
+                      ><span class="label-hd">your full name</span></label
+                    >
+                    <input type="text" name="fname2" id="fname2" />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="lname2" class="d-flex flex-column"
+                      ><span class="black-line"></span
+                      ><span class="label-hd">email address</span></label
+                    >
+                    <input type="email" name="lname2" id="lname2" />
+                  </div>
+                  <div class="col-12">
+                    <label for="" class="d-flex flex-column text-area-hd"
+                      ><span class="black-line"></span
+                      ><span class="label-hd">message</span></label
+                    >
+                    <textarea name="" id="text-area"></textarea>
+                  </div>
+                </div>
+                ,<input
+                  type="button"
+                  value="get started today"
+                  class="form-btn"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How it works Section-->
+      <section class="how-section">
+        <div class="container">
+          <div class="how-hdr-cntn">
+            <div class="row">
+              <div class="col-12 col-xl-6">
+                <div class="about-hdr d-flex get-hdr">
+                  <h3
+                    class="title3 about-title3 get-title3"
+                    data-aos="fade-right"
+                  >
+                    how it works
+                  </h3>
+                  <span
+                    class="yellow-line smaller-yellow-line about-yellow-line"
+                  ></span>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6">
+                <h2 class="title2 how-title" data-aos="fade-left">
+                  Real Stories. Real people. Real Transformations.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="how-steps" data-aos="fade-up">
+            <div class="row">
+              <div class="col-12 col-sm-4">
+                <div class="step-left step text-center" data-aos="fade-up">
+                  <img src="./assets/About/Target.png" alt="" />
+                  <p>goal setting</p>
+                  <span
+                    class="yellow-line smaller-yellow-line about-yellow-line"
+                  ></span>
+                  <div class="step-desc">
+                    Define clear fitness goals tailored to your needs.
+                  </div>
+                  <div class="step-num">01</div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="step-left step text-center">
+                  <img src="./assets/About/Target.png" alt="" />
+                  <p>Structured Training</p>
+                  <span
+                    class="yellow-line smaller-yellow-line about-yellow-line"
+                  ></span>
+                  <div class="step-desc">
+                    Follow guided workouts built for steady progress.
+                  </div>
+                  <div class="step-num">02</div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="step-left step text-center">
+                  <img src="./assets/About/Target.png" alt="" />
+                  <p>Progress Tracking</p>
+                  <span
+                    class="yellow-line smaller-yellow-line about-yellow-line"
+                  ></span>
+                  <div class="step-desc">
+                    Monitor results and celebrate every milestone.
+                  </div>
+                  <div class="step-num">03</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BMI Section -->
+      <section class="bmi-sec">
+        <div class="container">
+          <div class="about-hdr d-flex get-hdr">
+            <h3 class="title3 about-title3" data-aos="fade-right">
+              bmi calculator
+            </h3>
+            <span
+              class="yellow-line smaller-yellow-line about-yellow-line"
+            ></span>
+          </div>
+          <div class="row bmi-row align-items-center">
+            <div class="col-12 col-xl-6">
+              <h2 class="title2" data-aos="fade-up">
+                Calculate Your <span>BMI</span> Now
+              </h2>
+              <div class="bmi-desc" data-aos="fade-left">
+                It helps you understand whether you’re underweight, healthy, or
+                need to improve your fitness level. Track your progress as you
+                train and maintain the perfect balance between weight and
+                wellness. Start now to set smarter goals for a stronger,
+                healthier you.
+              </div>
+              <form action="" class="bmi-form" data-aos="fade-right">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <label for="fname2" class="d-flex flex-column"
+                      ><span class="bmi-yellow-line"></span
+                      ><span class="label-hd bmi-hd">Height / cm</span></label
+                    >
+                    <input
+                      type="number"
+                      name="fname2"
+                      id="fname2"
+                      class="bmi-input"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="lname2" class="d-flex flex-column"
+                      ><span class="bmi-yellow-line"></span
+                      ><span class="label-hd bmi-hd">Weight / kg</span></label
+                    >
+                    <input
+                      type="number"
+                      name="lname2"
+                      id="lname2"
+                      class="bmi-input"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="fname2" class="d-flex flex-column"
+                      ><span class="bmi-yellow-line"></span
+                      ><span class="label-hd bmi-hd">Age of you</span></label
+                    >
+                    <input
+                      type="numbber"
+                      name="fname2"
+                      id="fname2"
+                      class="bmi-input"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="lname2" class="d-flex flex-column"
+                      ><span class="bmi-yellow-line"></span
+                      ><span class="label-hd bmi-hd">Gender</span></label
+                    >
+                    <input
+                      type="text"
+                      name="lname2"
+                      id="lname2"
+                      class="bmi-input"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="fname2" class="d-flex flex-column"
+                      ><span class="bmi-yellow-line"></span
+                      ><span class="label-hd bmi-hd">Age of you</span></label
+                    >
+                    <input
+                      type="number"
+                      name="fname2"
+                      id="fname2"
+                      class="bmi-input"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="lname2" class="d-flex flex-column"
+                      ><span class="bmi-yellow-line"></span
+                      ><span class="label-hd bmi-hd">Gender</span></label
+                    >
+                    <input type="text" name="lname2" id="lname2" />
+                  </div>
+                </div>
+                ,<input type="button" value="calculate bmi" class="form-btn" />
+              </form>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="bmi-img-wrpr" data-aos="fade-left">
+                <img src="./assets/About/Bmi-img-wrpr.png" alt="" />
+                <div class="bmi-img-bg">
+                  <div class="bmi-img">
+                    <img src="./assets/About/Bmi-img.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sponser Section -->
+      <section class="sponser-sec">
+        <div class="container">
+          <div class="about-hdr d-flex get-hdr">
+            <h3 class="title3 about-title3 get-title3" data-aos="fade-right">
+              sponsorship
+            </h3>
+            <span
+              class="yellow-line smaller-yellow-line about-yellow-line"
+            ></span>
+          </div>
+          <div class="auto-scroll d-flex align-items-center">
+            <div class="auto-scroll-itms nike">
+              <img src="./assets/About/Auto-scroll-img1.png" alt="" />
+            </div>
+            <div class="auto-scroll-itms">
+              <img src="./assets/About/Auto-scroll-img2.png" alt="" />
+            </div>
+            <div class="auto-scroll-itms">
+              <img src="./assets/About/Auto-scroll-img3.png" alt="" />
+            </div>
+            <div class="auto-scroll-itms">
+              <img src="./assets/About/Auto-scroll-img4.png" alt="" />
+            </div>
+            <div class="auto-scroll-itms">
+              <img src="./assets/About/Auto-scroll-img5.png" alt="" />
+            </div>
+            <div class="auto-scroll-itms">
+              <img src="./assets/About/Auto-scroll-img6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="ftr-sec">
+      <div class="container">
+        <div class="ftr-top">
+          <div class="row ftr-row">
+            <div class="col-12 col-xl-6">
+              <div class="ftr-left" data-aos="fade-right">
+                <div class="ftr-hdr1">©2025 Fitin.</div>
+                <div class="ftr-hdr2">All rights reserved.</div>
+                <ul class="scl-list list-unstyled">
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Instagram
+                      <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
+                  </li>
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Facebook
+                      <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
+                  </li>
+                  <li class="">
+                    <a href="" class="scl-links d-flex justify-content-between"
+                      >Youtube <i class="fa-solid fa-arrow-right text-white"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="ftr-right" data-aos="fade-left">
+                <div class="ftr-logo">
+                  <a href="index.html"
+                    ><img src="./assets/Ftr-logo.png" alt=""
+                  /></a>
+                </div>
+                <ul class="ftr-list list-unstyled d-flex align-items-center">
+                  <li><a href="" class="ftr-links">Home</a></li>
+                  <li><a href="" class="ftr-links">About Us</a></li>
+                  <li><a href="" class="ftr-links">Features</a></li>
+                  <li><a href="" class="ftr-links">Workouts</a></li>
+                  <li><a href="" class="ftr-links">Trainers</a></li>
+                  <li><a href="" class="ftr-links">Testimonials</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ftr-btm">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="ftr-btm-left">
+                <div class="ftr-hdr1">Stay Updated</div>
+                <p>
+                  event info straight to your inbox. Subscribe to get this tips,
+                  offers, and
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <form action="" class="email-form">
+                <div class="email-input-wrpr">
+                  <input
+                    type="text"
+                    class="email-input"
+                    placeholder="Email Input"
+                  />
+                  <a class="btn nav-btn ftr-btn" type="submit">
+                    <span>Subscribe</span>
+                    <img src="./assets/Icon.png" alt="" />
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Isotope JS CDN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Vanilla Tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
